@@ -1,0 +1,748 @@
+The following differences were found:
+
+  com.ericsson.nms.mediation:core-mediation-api ........ 2.6.1 -> 2.1.1
+  com.ericsson.nms.mediation:core-mediation-models-api . 2.3.1 -> 2.1.1
+  com.ericsson.nms.mediation:mediation-engine-core .. 6.28.1 -> 6.18.12
+  com.ericsson.nms.mediation:mediation-engine-execution-camel  6.28.1 -> 6.18.12
+  com.ericsson.nms.mediation:mediation-service-ear .. 6.28.1 -> 6.18.12
+  com.ericsson.nms.mediation.component:inbound-dps-handler-code-ear  1.36.1 -> 1.20.1
+  com.ericsson.nms.mediation.component:inbound-dps-handler-model-jar  1.7.17 -> 1.6.1
+  com.ericsson.nms.mediation.component:moci-handler-code-ear  1.18.1 -> 1.11.2
+  com.ericsson.nms.mediation.component:moci-handler-model-jar  1.5.2 -> 1.3.1
+  com.ericsson.nms.mediation.component:sync-node-moci-handler-ear  1.16.1 -> 1.10.3
+  com.ericsson.nms.mediation.component:sync-node-moci-handler-model-xml  1.4.22 -> 1.3.2
+  com.ericsson.nms.services:AlarmActionService-api ... 1.42.2 -> 1.25.4
+  com.ericsson.nms.services:AlarmActionService-ear ... 1.42.2 -> 1.25.4
+  com.ericsson.nms.services:AlarmRoutingService-api .. 1.34.1 -> 1.18.1
+  com.ericsson.nms.services:AlarmRoutingService-ear .. 1.34.1 -> 1.18.1
+  com.ericsson.oss.fm:fm-common-models-jar ............. 1.3.2 -> 1.1.2
+  com.ericsson.oss.fm:fm-common-models-model ........... 1.4.1 -> 1.1.2
+  com.ericsson.oss.itpf:cm-events-solr-model-models .... 1.9.5 -> 1.3.2
+  com.ericsson.oss.itpf.common:PlatformIntegrationBridgeModel-model  2.3.17 -> 2.2.5
+  com.ericsson.oss.itpf.datalayer:data-lifecycle-management-service-ear  1.5.5 -> 1.4.1
+  com.ericsson.oss.itpf.datalayer:data-lifecycle-management-service-spi-jar  1.1.1 -> 1.0.2
+  com.ericsson.oss.itpf.datalayer:dlms-configuration-model-model  1.1.10 -> 1.0.1
+  com.ericsson.oss.itpf.datalayer:fls-config-model-api . 1.3.5 -> 1.1.2
+  com.ericsson.oss.itpf.datalayer:fls-config-model-code  1.3.5 -> 1.1.2
+  com.ericsson.oss.itpf.datalayer:fls-load-schedule-model-model  1.6.12 -> 1.1.3
+  com.ericsson.oss.itpf.datalayer:fls-model-jar ........ 1.6.4 -> 1.1.2
+  com.ericsson.oss.itpf.datalayer:solr-Load-schedule-model-model  1.5.1 -> 1.2.1
+  com.ericsson.oss.itpf.datalayer.dps:data-access-delegate-api  1.52.3 -> 1.37.1
+  com.ericsson.oss.itpf.datalayer.dps:dps-api ........ 1.52.3 -> 1.37.1
+  com.ericsson.oss.itpf.datalayer.dps:dps-dto ........ 1.52.3 -> 1.37.1
+  com.ericsson.oss.itpf.eap:ee6-batch-extension ....... 1.5.15 -> 1.4.3
+  com.ericsson.oss.itpf.eap:ee6-jberet ................ 1.5.15 -> 1.4.3
+  com.ericsson.oss.itpf.flowDsl.common.handler.models:FtpConnectionBuilderHandler-model  1.27.1 -> 1.21.1
+  com.ericsson.oss.itpf.flowDsl.common.handler.models:FtpConnectionReleaserHandler-model  1.27.1 -> 1.21.1
+  com.ericsson.oss.itpf.flowDsl.common.handler.models:FtpOperationHandler-model  1.27.1 -> 1.21.1
+  com.ericsson.oss.itpf.flowDsl.common.handler.models:MultipleFileCollectionHandler-model  1.27.1 -> 1.21.1
+  com.ericsson.oss.itpf.sdkutils:common-utils-jar .... 1.2.31 -> 1.0.33
+  com.ericsson.oss.itpf.security:credential-manager-config-model-xml  1.1.7 -> 1.0.4
+  com.ericsson.oss.itpf.security:credential-manager-service-api-jar  1.4.1 -> 1.3.24
+  com.ericsson.oss.itpf.security:credential-manager-service-interface  1.37.1 -> 1.21.4
+  com.ericsson.oss.itpf.security:key-management-jar .... 1.1.3 -> 1.1.1
+  com.ericsson.oss.itpf.security:pki-common-jar ...... 1.4.39 -> 1.4.22
+  com.ericsson.oss.itpf.security:pki-common-model .... 1.4.39 -> 1.4.22
+  com.ericsson.oss.itpf.security:pki-core-model-deploy-model  1.16.1 -> 1.11.1
+  com.ericsson.oss.itpf.security:pki-manager-certificatemanagement-api  1.34.2 -> 1.25.1
+  com.ericsson.oss.itpf.security:pki-manager-common-model  1.34.2 -> 1.25.1
+  com.ericsson.oss.itpf.security:pki-manager-configurationmanagement-api  1.34.2 -> 1.25.1
+  com.ericsson.oss.itpf.security:pki-manager-crlmanagement-api  1.34.2 -> 1.25.1
+  com.ericsson.oss.itpf.security:pki-manager-profilemanagement-api  1.34.2 -> 1.25.1
+  com.ericsson.oss.itpf.security.cryptography:cryptography-service-api-jar  1.4.6 -> 1.2.12
+  com.ericsson.oss.itpf.security.sso:sso-utilities-model-jar  1.21.3 -> 1.3.1
+  com.ericsson.oss.itpf.security.sso:sso-utilities-service-api  1.23.1 -> 1.3.1
+  com.ericsson.oss.itpf.security.sso:sso-utilities-service-dao  1.23.1 -> 1.3.1
+  com.ericsson.oss.itpf.security.sso:sso-utilities-service-ear  1.23.1 -> 1.3.1
+  com.ericsson.oss.itpf.security.sso:sso-utilities-service-jar  1.23.1 -> 1.3.1
+  com.ericsson.oss.mediation:cm-mediation-common-ear . 1.13.1 -> 1.10.1
+  com.ericsson.oss.mediation:cm-mediation-common-model-jar  1.13.1 -> 1.10.1
+  com.ericsson.oss.mediation:event-based-client-ear . 1.19.5 -> 1.13.13
+  com.ericsson.oss.mediation:maverick-1.6.5-session-provider-jar  1.17.1 -> 1.10.1
+  com.ericsson.oss.mediation:mediation-core-api-channel-models-xml  1.0.19 -> 1.1.1
+  com.ericsson.oss.mediation:mediation-core-service-api  1.1.25 -> 1.1.10
+  com.ericsson.oss.mediation:mediation-resolver-spi-jar  1.6.16 -> 1.5.1
+  com.ericsson.oss.mediation:netconf-model-jar ........ 1.1.12 -> 1.0.1
+  com.ericsson.oss.mediation:network-connector-configuration-models-jar  1.13.1 -> 1.10.4
+  com.ericsson.oss.mediation:network-connector-configuration-models-xml  1.14.6 -> 1.10.4
+  com.ericsson.oss.mediation:network-element-connector-api-jar  1.19.1 -> 1.15.3
+  com.ericsson.oss.mediation:router-api ............... 2.25.4 -> 1.3.8
+  com.ericsson.oss.mediation:router-clustering ........ 2.25.4 -> 2.3.4
+  com.ericsson.oss.mediation:ssh-transport-library-jar  1.17.1 -> 1.10.1
+  com.ericsson.oss.mediation:tnk-urn-resolver-jar .... 1.1.64 -> 1.1.32
+  com.ericsson.oss.mediation:transport-api-jar ....... 1.16.1 -> 1.11.3
+  com.ericsson.oss.mediation:transport-provider-jar .. 1.16.1 -> 1.11.3
+  com.ericsson.oss.mediation.adapter:com-netconf-model-xa-resource-provider-jar  1.16.1 -> 1.7.2
+  com.ericsson.oss.mediation.adapter:enterprise-heartbeat-connector-api-jar  1.8.2 -> 1.6.1
+  com.ericsson.oss.mediation.adapter:enterprise-heartbeat-connector-jar  1.12.2 -> 1.8.1
+  com.ericsson.oss.mediation.adapter:netconf-resource-adapter-api  1.27.4 -> 1.5.4
+  com.ericsson.oss.mediation.adapter:netconf-resource-adapter-ear  1.27.4 -> 1.17.1
+  com.ericsson.oss.mediation.adapter:netconf-resource-adapter-jar  1.27.4 -> 1.17.1
+  com.ericsson.oss.mediation.adapter:netconf-resource-adapter-ra  1.27.4 -> 1.17.1
+  com.ericsson.oss.mediation.adapter:netconf-resource-adapter-util  1.27.4 -> 1.17.1
+  com.ericsson.oss.mediation.adapter:netconf-resource-adapter-xa-api  1.27.4 -> 1.5.4
+  com.ericsson.oss.mediation.adapter:netconf-yang-xa-resource-provider-jar  1.8.1 -> 1.4.3
+  com.ericsson.oss.mediation.adapter:push-heartbeat-provider-jar  1.13.1 -> 1.9.7
+  com.ericsson.oss.mediation.adapter:sgsn-netconf-model-xa-resource-provider-jar  1.14.1 -> 1.8.5
+  com.ericsson.oss.mediation.adapter:snmp-connector-api  1.17.5 -> 1.6.1
+  com.ericsson.oss.mediation.adapter:snmp-connector-jar  1.17.5 -> 1.6.1
+  com.ericsson.oss.mediation.adapter:snmp-enterprise-connector-api  1.7.1 -> 1.4.10
+  com.ericsson.oss.mediation.adapter:snmp-enterprise-connector-jar  1.7.1 -> 1.4.10
+  com.ericsson.oss.mediation.adapter:snmp-heartbeat-provider-jar  1.13.1 -> 1.9.7
+  com.ericsson.oss.mediation.adapter:snmp-push-heartbeat-provider-jar  1.13.1 -> 1.9.7
+  com.ericsson.oss.mediation.adapter.ssh:ssh-jca-connector-api  1.6.4 -> 1.4.1
+  com.ericsson.oss.mediation.adapter.ssh:ssh-jca-connector-jar  1.6.4 -> 1.4.1
+  com.ericsson.oss.mediation.adapter.transport:session-manager-api  1.11.1 -> 1.7.4
+  com.ericsson.oss.mediation.adapter.transport:session-manager-dist  1.9.1 -> 1.7.4
+  com.ericsson.oss.mediation.adapter.transport:session-manager-jar  1.11.1 -> 1.7.4
+  com.ericsson.oss.mediation.autoprovisioning:nodediscovery-ecim-ear  1.15.6 -> 1.10.3
+  com.ericsson.oss.mediation.autoprovisioning.policy:ap-router-policy-ear  1.3.1 -> 1.0.2
+  com.ericsson.oss.mediation.cba.cm.handlers:cba-netconf-write-controller-handler-models-jar  1.21.1 -> 1.8.4
+  com.ericsson.oss.mediation.cba.cm.handlers.netconf:cba-cm-netconf-handler-ear  1.7.1 -> 1.6.1
+  com.ericsson.oss.mediation.cba.cm.models.flow:radionode-write-node-flow-models-jar  1.13.1 -> 1.10.1
+  com.ericsson.oss.mediation.cba.cm.models.flows:cba-cm-sync-node-flow-models-jar  1.16.2 -> 1.11.2
+  com.ericsson.oss.mediation.cba.cm.models.flows:radionode-read-node-flow-jar  1.7.5 -> 1.5.1
+  com.ericsson.oss.mediation.cba.cm.models.flows:sgsn-mme-read-node-flow-jar  1.8.1 -> 1.5.1
+  com.ericsson.oss.mediation.cba.cm.models.handlers.netconf:cba-cm-netconf-handler-model-jar  1.5.1 -> 1.4.3
+  com.ericsson.oss.mediation.cba.handlers:cba-cm-sync-node-handlers-transformer-jar  1.56.1 -> 1.11.6
+  com.ericsson.oss.mediation.cba.handlers:com-ecim-cm-filter-get-handler-ear  1.13.1 -> 1.7.1
+  com.ericsson.oss.mediation.cba.handlers:com-ecim-cm-filter-get-handler-model-jar  1.14.1 -> 1.7.1
+  com.ericsson.oss.mediation.cba.handlers.netconf:cba-netconf-connect-handler-ear  1.11.1 -> 1.9.1
+  com.ericsson.oss.mediation.cba.handlers.netconf:cba-netconf-disconnect-handler-ear  1.11.1 -> 1.8.1
+  com.ericsson.oss.mediation.cba.handlers.netconf:cba-netconf-write-controller-handler-code-ear  1.20.2 -> 1.8.4
+  com.ericsson.oss.mediation.cba.models:cba-configuration-model-jar  1.19.1 -> 1.12.1
+  com.ericsson.oss.mediation.cba.models:cba-configuration-model-xml  1.20.1 -> 1.12.1
+  com.ericsson.oss.mediation.cba.models.handlers:cba-cm-sync-node-handler-models-jar  1.8.1 -> 1.4.2
+  com.ericsson.oss.mediation.cba.models.handlers.netconf:cba-netconf-connect-handler-model-jar  1.4.3 -> 1.2.2
+  com.ericsson.oss.mediation.cba.models.handlers.netconf:cba-netconf-disconnect-handler-model-jar  1.4.7 -> 1.3.1
+  com.ericsson.oss.mediation.clients.supervision:supervision-mediation-client-ear  1.16.4 -> 1.8.8
+  com.ericsson.oss.mediation.cm:com-ecim-mdb-notification-listener-api-jar  1.24.1 -> 1.16.1
+  com.ericsson.oss.mediation.cm:com-ecim-mdb-notification-listener-code-ear  1.23.1 -> 1.16.1
+  com.ericsson.oss.mediation.cm:notification-cache-service-api  1.11.1 -> 1.4.2
+  com.ericsson.oss.mediation.cm:notification-cache-service-ear  1.11.2 -> 1.4.2
+  com.ericsson.oss.mediation.cm.events:ipos-node-event-jar  1.1.2 -> 1.2.1
+  com.ericsson.oss.mediation.cm.events:ipos-node-event-model-jar  1.3.7 -> 1.2.1
+  com.ericsson.oss.mediation.cm.events:sync-node-event-jar  1.14.1 -> 1.6.3
+  com.ericsson.oss.mediation.cm.events:sync-node-event-model-jar  1.14.1 -> 1.6.3
+  com.ericsson.oss.mediation.cm.handlers:com-ecim-delete-subscription-handler-code  1.6.1 -> 1.4.1
+  com.ericsson.oss.mediation.cm.handlers:com-ecim-delete-subscription-handler-ear  1.6.1 -> 1.4.1
+  com.ericsson.oss.mediation.cm.handlers:com-ecim-delete-subscription-handler-model  1.6.1 -> 1.4.1
+  com.ericsson.oss.mediation.cm.handlers:com-ecim-ipaddresschange-handlers-ear  1.4.1 -> 1.0.5
+  com.ericsson.oss.mediation.cm.handlers:com-ecim-notification-supervision-handler-api-jar  1.38.1 -> 1.17.1
+  com.ericsson.oss.mediation.cm.handlers:com-ecim-notification-supervision-handler-ear  1.38.1 -> 1.17.1
+  com.ericsson.oss.mediation.cm.handlers:com-ecim-notification-supervision-handler-model  1.37.1 -> 1.17.1
+  com.ericsson.oss.mediation.cm.handlers:com-ecim-retrieve-mim-handlers-ear  1.29.1 -> 1.10.6
+  com.ericsson.oss.mediation.cm.handlers:com-ecim-retrieve-mim-handlers-model  1.29.1 -> 1.10.6
+  com.ericsson.oss.mediation.cm.handlers:cpp-retrieve-mim-handlers-ear  1.32.1 -> 1.13.5
+  com.ericsson.oss.mediation.cm.handlers:cpp-retrieve-mim-handlers-model  1.32.1 -> 1.13.5
+  com.ericsson.oss.mediation.cm.handlers:ecim-notification-heartbeat-handler-model-jar  1.3.11 -> 1.2.3
+  com.ericsson.oss.mediation.cm.handlers:er6000-sync-node-handlers-ear  1.36.1 -> 1.11.2
+  com.ericsson.oss.mediation.cm.handlers:netconf-ecim-sync-node-handler-models-jar  1.36.1 -> 1.11.2
+  com.ericsson.oss.mediation.cm.handlers:netconf-yang-operation-handler-ear  1.12.1 -> 1.4.2
+  com.ericsson.oss.mediation.cm.handlers:netconf-yang-operation-handler-model-jar  1.12.2 -> 1.4.2
+  com.ericsson.oss.mediation.cm.handlers:netconf-yang-sync-node-handler-models-jar  1.36.1 -> 1.11.2
+  com.ericsson.oss.mediation.cm.ipos:ipos-cm-heartbeat-supervision-handler-code  1.14.1 -> 1.0.3
+  com.ericsson.oss.mediation.cm.ipos:ipos-cm-heartbeat-supervision-handler-ear  1.14.1 -> 1.0.3
+  com.ericsson.oss.mediation.cm.ipos:ipos-cm-heartbeat-supervision-handler-model  1.13.1 -> 1.0.3
+  com.ericsson.oss.mediation.cm.ipos:ipos-cm-notification-handling-flow-jar  1.5.1 -> 1.4.1
+  com.ericsson.oss.mediation.cm.ipos:ipos-cm-subscription-flow-jar  1.6.8 -> 1.5.4
+  com.ericsson.oss.mediation.cm.ipos:ipos-cm-subscription-handler-code  1.22.1 -> 1.9.1
+  com.ericsson.oss.mediation.cm.ipos:ipos-cm-subscription-handler-ear  1.22.1 -> 1.9.1
+  com.ericsson.oss.mediation.cm.ipos:ipos-cm-subscription-handler-model  1.21.2 -> 1.9.1
+  com.ericsson.oss.mediation.cm.models:bsp-mediation-configuration-jar  1.1.1 -> 1.0.1
+  com.ericsson.oss.mediation.cm.models:fronthaul-6080-cm-mediation-configuration-jar  1.2.1 -> 1.1.2
+  com.ericsson.oss.mediation.cm.models:hssfe-mediation-configuration-jar  1.1.1 -> 1.0.1
+  com.ericsson.oss.mediation.cm.models:vbgf-mediation-configuration-jar  1.1.1 -> 1.0.1
+  com.ericsson.oss.mediation.cm.models:veme-mediation-configuration-jar  1.1.1 -> 1.0.1
+  com.ericsson.oss.mediation.cm.models:vipworks-mediation-configuration-jar  1.1.1 -> 1.0.1
+  com.ericsson.oss.mediation.cm.models:vmrf-mediation-configuration-jar  1.1.1 -> 1.0.2
+  com.ericsson.oss.mediation.cm.models:vupg-mediation-configuration-jar  1.1.1 -> 1.0.2
+  com.ericsson.oss.mediation.cm.models:vwcg-mediation-configuration-jar  1.1.1 -> 1.0.1
+  com.ericsson.oss.mediation.cm.models.flow:com-ecim-cm-delta-sync-flow-model  1.4.2 -> 1.2.6
+  com.ericsson.oss.mediation.cm.models.flow:com-ecim-create-subscription-flow-model  1.6.1 -> 1.5.3
+  com.ericsson.oss.mediation.cm.models.flow:com-ecim-delete-subscription-flow-model  1.4.1 -> 1.3.2
+  com.ericsson.oss.mediation.cm.models.flow:com-ecim-ipaddresschange-flow-jar  1.9.1 -> 1.0.2
+  com.ericsson.oss.mediation.cm.models.flow:com-ecim-retrieve-mim-flow-model  1.9.2 -> 1.2.2
+  com.ericsson.oss.mediation.cm.models.flow:cpp-ipaddresschange-flow-model-jar  1.1.12 -> 1.0.1
+  com.ericsson.oss.mediation.cm.models.flow:ecim-notification-handling-supervision-flow-model  1.9.2 -> 1.5.3
+  com.ericsson.oss.mediation.cm.models.flow:sgsn-create-subscription-flow-model  1.6.1 -> 1.5.2
+  com.ericsson.oss.mediation.cm.models.flow:sgsn-delete-subscription-flow-model  1.5.1 -> 1.4.2
+  com.ericsson.oss.mediation.cm.models.flow:sgsn-mme-write-node-flow-models-jar  1.11.1 -> 1.9.1
+  com.ericsson.oss.mediation.cm.models.flows:cpp-retrieve-mim-flow-model  1.11.3 -> 1.4.1
+  com.ericsson.oss.mediation.cm.models.handlers:com-ecim-ipaddresschange-handlers-model-jar  1.2.15 -> 1.0.1
+  com.ericsson.oss.mediation.cm.models.handlers:cpp-ipaddresschange-handlers-model-jar  1.1.21 -> 1.0.1
+  com.ericsson.oss.mediation.cm.policy:cm-router-policy-model-jar  1.9.1 -> 1.5.1
+  com.ericsson.oss.mediation.cm.policy:cm-router-policy-model-xml  1.9.2 -> 1.5.1
+  com.ericsson.oss.mediation.cm.policy:com-ecim-cm-router-policy-cache-config-jar  1.4.1 -> 1.3.1
+  com.ericsson.oss.mediation.cm.policy:com-ecim-cm-router-policy-config-jar  2.33.4 -> 2.6.4
+  com.ericsson.oss.mediation.cm.policy:com-ecim-cm-router-policy-dist  2.33.4 -> 2.6.4
+  com.ericsson.oss.mediation.cm.policy:com-ecim-cm-router-policy-ear  2.33.4 -> 2.6.4
+  com.ericsson.oss.mediation.cm.policy:com-ecim-cm-router-policy-id-jar  2.33.4 -> 2.6.4
+  com.ericsson.oss.mediation.cm.policy:com-ecim-cm-router-policy-model-jar  1.4.1 -> 1.3.1
+  com.ericsson.oss.mediation.cm.policy:com-ecim-cm-router-policy-model-xml  1.8.1 -> 1.3.1
+  com.ericsson.oss.mediation.cm.policy:common-cm-router-policy-api  1.0.68 -> 1.0.35
+  com.ericsson.oss.mediation.cm.policy:common-cm-router-policy-dist  1.0.68 -> 1.0.35
+  com.ericsson.oss.mediation.cm.policy:common-cm-router-policy-dps-jar  1.0.68 -> 1.0.35
+  com.ericsson.oss.mediation.cm.policy:common-cm-router-policy-flow-control-jar  1.0.68 -> 1.0.35
+  com.ericsson.oss.mediation.cm.policy:common-cm-router-policy-jar  1.0.68 -> 1.0.35
+  com.ericsson.oss.mediation.cm.policy:common-cm-router-policy-shared-jar  1.0.68 -> 1.0.35
+  com.ericsson.oss.mediation.cm.policy:er6000-router-policy-model-jar  1.5.1 -> 1.1.1
+  com.ericsson.oss.mediation.cm.policy:er6000-router-policy-model-xml  1.5.1 -> 1.1.1
+  com.ericsson.oss.mediation.cm.policy:snmp-cm-router-policy-cache-config-jar  1.20.1 -> 1.1.1
+  com.ericsson.oss.mediation.cm.policy:snmp-cm-router-policy-config-jar  1.20.1 -> 1.1.1
+  com.ericsson.oss.mediation.cm.policy:snmp-cm-router-policy-dist  1.20.1 -> 1.1.1
+  com.ericsson.oss.mediation.cm.policy:snmp-cm-router-policy-ear  1.20.1 -> 1.1.1
+  com.ericsson.oss.mediation.cm.policy:snmp-cm-router-policy-id-jar  1.20.1 -> 1.1.1
+  com.ericsson.oss.mediation.cm.policy:snmp-cm-router-policy-model-jar  1.20.1 -> 1.1.1
+  com.ericsson.oss.mediation.cm.policy:snmp-cm-router-policy-model-xml  1.20.1 -> 1.1.1
+  com.ericsson.oss.mediation.cpp.notificationhandling.flows:notification-handling-flow-model  1.4.1 -> 1.3.1
+  com.ericsson.oss.mediation.cpp.notificationhandling.handlers.model:notification-receiver-handler-model-jar  1.4.1 -> 1.3.1
+  com.ericsson.oss.mediation.cpp.pici.handlers:inventory-common  1.32.1 -> 1.22.1
+  com.ericsson.oss.mediation.cpp.pici.handlers:inventory-handler-ear  1.32.1 -> 1.22.1
+  com.ericsson.oss.mediation.cpp.pici.handlers:inventoryMediationInstrumentation  1.32.1 -> 1.22.1
+  com.ericsson.oss.mediation.cpp.pici.handlers:parser-handler-code  1.32.1 -> 1.22.1
+  com.ericsson.oss.mediation.cpp.pici.handlers:pici-idl  1.32.1 -> 1.22.1
+  com.ericsson.oss.mediation.cpp.pici.handlers:pici-xml  1.32.1 -> 1.22.1
+  com.ericsson.oss.mediation.cpp.pici.models.handlers:inventory-handler-model-jar  1.12.2 -> 1.8.6
+  com.ericsson.oss.mediation.cpp.subscription.flows:subscription-flow-model  1.5.19 -> 1.3.1
+  com.ericsson.oss.mediation.cpp.subscription.flows:subscription-validation-flow-model  1.6.1 -> 1.5.1
+  com.ericsson.oss.mediation.cpp.subscription.handlers.model:subscription-creation-handler-model-jar  1.4.1 -> 1.3.1
+  com.ericsson.oss.mediation.cpp.subscription.handlers.model:subscription-validation-handler-model-jar  1.4.1 -> 1.3.1
+  com.ericsson.oss.mediation.event:generic-start-sync-event-model-model-jar  1.2.9 -> 1.1.1
+  com.ericsson.oss.mediation.events:authentication-failure-event-model-jar  1.1.14 -> 1.0.2
+  com.ericsson.oss.mediation.events:software-sync-event-model-jar  1.22.2 -> 1.9.2
+  com.ericsson.oss.mediation.flow:authentication-failure-flow-model  1.3.1 -> 1.2.1
+  com.ericsson.oss.mediation.flow:cpp-software-sync-flow-model-xml  1.15.1 -> 1.8.1
+  com.ericsson.oss.mediation.flow:sgsn-mme-security-ssh-command-flow-model  1.3.10 -> 1.2.1
+  com.ericsson.oss.mediation.fm:ecm-mediation-flow-model-xml  1.19.1 -> 1.3.10
+  com.ericsson.oss.mediation.fm:ecm-mediation-handler-ear  1.20.2 -> 1.3.10
+  com.ericsson.oss.mediation.fm:ecm-mediation-handler-model-xml  1.19.1 -> 1.3.10
+  com.ericsson.oss.mediation.fm:http-connector-api ... 1.20.2 -> 1.3.10
+  com.ericsson.oss.mediation.fm:http-connector-jar ... 1.20.2 -> 1.3.10
+  com.ericsson.oss.mediation.fm:http-fm-adapter-api .. 1.20.2 -> 1.3.10
+  com.ericsson.oss.mediation.fm:http-fm-adapter-jar .. 1.20.2 -> 1.3.10
+  com.ericsson.oss.mediation.fm:http-fm-engine-api ... 1.20.2 -> 1.3.10
+  com.ericsson.oss.mediation.fm:http-fm-engine-config  1.20.2 -> 1.3.10
+  com.ericsson.oss.mediation.fm:http-fm-engine-ear ... 1.20.2 -> 1.3.10
+  com.ericsson.oss.mediation.fm:http-fm-engine-transformer  1.20.2 -> 1.3.10
+  com.ericsson.oss.mediation.fm:snmp-fm-engine-model-jar  1.5.1 -> 1.0.2
+  com.ericsson.oss.mediation.fm:snmp-fm-engine-model-xml  1.7.1 -> 1.2.3
+  com.ericsson.oss.mediation.fm:snmp-fm-engine-transformer  1.51.2 -> 1.12.4
+  com.ericsson.oss.mediation.fm.flow:cisco-router-cli-config-ear  1.10.1 -> 1.0.4
+  com.ericsson.oss.mediation.fm.flow:cisco-router-cli-config-jar  1.10.1 -> 1.0.4
+  com.ericsson.oss.mediation.fm.flow:cisco-router-cli-config-model-jar  1.10.1 -> 1.0.4
+  com.ericsson.oss.mediation.fm.flow:mini-link-indoor-fm-target-destination-ear  1.12.1 -> 1.8.1
+  com.ericsson.oss.mediation.fm.flow:mini-link-indoor-fm-target-destination-model-jar  1.12.1 -> 1.8.1
+  com.ericsson.oss.mediation.fm.handlers:cpp-alarm-supervision-handler-code-api  1.22.1 -> 1.13.2
+  com.ericsson.oss.mediation.fm.handlers:cpp-alarm-supervision-handler-code-ear  1.22.1 -> 1.13.2
+  com.ericsson.oss.mediation.fm.handlers:cpp-alarm-supervision-handler-code-jar  1.22.1 -> 1.13.2
+  com.ericsson.oss.mediation.fm.handlers:ecim-netconf-fm-handler-ear  1.11.1 -> 1.9.1
+  com.ericsson.oss.mediation.fm.handlers:ecim-netconf-fm-handler-jar  1.11.1 -> 1.9.1
+  com.ericsson.oss.mediation.fm.handlers:er6000-snmp-fm-handler-code  1.15.3 -> 1.12.1
+  com.ericsson.oss.mediation.fm.handlers:er6000-snmp-fm-handler-ear  1.15.3 -> 1.12.1
+  com.ericsson.oss.mediation.fm.handlers:er6000-snmp-fm-handler-model  1.15.3 -> 1.12.1
+  com.ericsson.oss.mediation.fm.handlers:er6000-snmp-fm-handler-model-jar  1.15.3 -> 1.12.1
+  com.ericsson.oss.mediation.fm.handlers:sgsn-mme-netconf-fm-handler-code  1.16.1 -> 1.12.1
+  com.ericsson.oss.mediation.fm.handlers:sgsn-mme-netconf-fm-handler-ear  1.16.1 -> 1.12.1
+  com.ericsson.oss.mediation.fm.handlers:sgsn-mme-netconf-fm-handler-model  1.16.1 -> 1.12.1
+  com.ericsson.oss.mediation.fm.handlers:snmp-fm-handler-ear  1.31.2 -> 1.18.1
+  com.ericsson.oss.mediation.fm.handlers:snmp-fm-handler-model-jar  1.30.1 -> 1.18.1
+  com.ericsson.oss.mediation.fm.models:cisco-router-fm-mediation-configuration-jar  1.6.1 -> 1.3.3
+  com.ericsson.oss.mediation.fm.models:fronthaul-6080-fm-mediation-configuration-jar  1.2.7 -> 1.1.1
+  com.ericsson.oss.mediation.fm.models:mini-link-indoor-fm-mediation-configuration-jar  1.5.4 -> 1.4.1
+  com.ericsson.oss.mediation.fm.models.config:FmCorbaMediationConfig  1.3.15 -> 1.1.3
+  com.ericsson.oss.mediation.fm.models.configurations:cscf-fm-mediation-configuration-model-jar  1.3.1 -> 1.1.1
+  com.ericsson.oss.mediation.fm.models.configurations:epg-fm-mediation-configuration-model-jar  1.4.1 -> 1.1.1
+  com.ericsson.oss.mediation.fm.models.configurations:er6000-fm-mediation-configuration-jar  1.5.6 -> 1.4.1
+  com.ericsson.oss.mediation.fm.models.configurations:msrbsv1-fm-mediation-configuration-model-jar  1.4.1 -> 1.3.1
+  com.ericsson.oss.mediation.fm.models.configurations:msrbsv2-fm-mediation-configuration-model-jar  1.7.13 -> 1.6.1
+  com.ericsson.oss.mediation.fm.models.configurations:mtas-fm-mediation-configuration-model-jar  1.3.1 -> 1.1.1
+  com.ericsson.oss.mediation.fm.models.configurations:radiotnode-fm-mediation-configuration-model-jar  1.1.1 -> 1.0.1
+  com.ericsson.oss.mediation.fm.models.configurations:sapc-fm-mediation-configuration-model-jar  1.1.1 -> 1.0.3
+  com.ericsson.oss.mediation.fm.models.configurations:sbg-fm-mediation-configuration-model-jar  1.3.1 -> 1.1.1
+  com.ericsson.oss.mediation.fm.models.configurations:wpp-sgsn-mme-fm-mediation-configuration-model-jar  1.7.7 -> 1.6.1
+  com.ericsson.oss.mediation.fm.models.flow:CppAlarmSupervisionFlow-model  1.5.1 -> 1.3.2
+  com.ericsson.oss.mediation.fm.models.flow:CppAlarmSupervisionHandler-model  1.7.1 -> 1.4.2
+  com.ericsson.oss.mediation.fm.models.flows:er6000-snmp-fm-model-jar  1.13.1 -> 1.9.2
+  com.ericsson.oss.mediation.handlers:authentication-failure-handler-code  1.6.2 -> 1.5.3
+  com.ericsson.oss.mediation.handlers:authentication-failure-handler-ear  1.6.2 -> 1.5.3
+  com.ericsson.oss.mediation.handlers:authentication-failure-handler-model  1.7.1 -> 1.5.3
+  com.ericsson.oss.mediation.handlers:com-ecim-cm-delta-sync-handler-api-jar  1.4.1 -> 1.3.7
+  com.ericsson.oss.mediation.handlers:com-ecim-cm-delta-sync-handler-ear  1.4.1 -> 1.3.7
+  com.ericsson.oss.mediation.handlers:com-ecim-cm-delta-sync-handler-model  1.5.1 -> 1.3.7
+  com.ericsson.oss.mediation.handlers:com-ecim-cm-heartbeat-supervision-handler-code-ear  2.29.2 -> 2.1.3
+  com.ericsson.oss.mediation.handlers:com-ecim-cm-heartbeat-supervision-handler-code-jar  2.29.2 -> 2.1.3
+  com.ericsson.oss.mediation.handlers:com-ecim-cm-heartbeat-supervision-handler-model-jar  2.26.9 -> 2.1.3
+  com.ericsson.oss.mediation.handlers:com-ecim-cm-subscription-blacklist-csv-parser-jar  1.28.1 -> 1.14.1
+  com.ericsson.oss.mediation.handlers:com-ecim-cm-subscription-blacklist-jar  1.28.1 -> 1.14.1
+  com.ericsson.oss.mediation.handlers:com-ecim-cm-subscription-handler-code  1.28.1 -> 1.14.1
+  com.ericsson.oss.mediation.handlers:com-ecim-cm-subscription-handler-ear  1.28.1 -> 1.14.1
+  com.ericsson.oss.mediation.handlers:com-ecim-cm-subscription-handler-model  1.27.1 -> 1.14.1
+  com.ericsson.oss.mediation.handlers:cpp-software-sync-handler-code-ear  1.42.2 -> 1.18.1
+  com.ericsson.oss.mediation.handlers:cpp-software-sync-handler-model-xml  1.15.1 -> 1.7.2
+  com.ericsson.oss.mediation.handlers:sgsn-mme-command-handler-code  1.3.14 -> 1.2.2
+  com.ericsson.oss.mediation.handlers:sgsn-mme-command-handler-ear  1.3.14 -> 1.2.2
+  com.ericsson.oss.mediation.handlers:sgsn-mme-command-handler-model  1.3.16 -> 1.2.2
+  com.ericsson.oss.mediation.handlers:ssh-command-handler-model  1.2.1 -> 1.1.1
+  com.ericsson.oss.mediation.handlers:ssh-handler-code-ear  1.7.20 -> 1.6.3
+  com.ericsson.oss.mediation.handlers:ssh-handler-model-jar  1.4.21 -> 1.3.7
+  com.ericsson.oss.mediation.handlers:ssh-transport-connect-handler-ear  1.9.1 -> 1.8.1
+  com.ericsson.oss.mediation.handlers:ssh-transport-connect-handler-model-jar  1.10.1 -> 1.8.1
+  com.ericsson.oss.mediation.handlers:tls-credentials-manager-handler-code  1.13.3 -> 1.8.1
+  com.ericsson.oss.mediation.handlers:tls-credentials-manager-handler-ear  1.13.3 -> 1.8.1
+  com.ericsson.oss.mediation.handlers:tls-credentials-manager-handler-model  1.14.2 -> 1.8.1
+  com.ericsson.oss.mediation.healthcheck.handlers:commons-jar  1.7.1 -> 1.0.6
+  com.ericsson.oss.mediation.healthcheck.handlers:cpp-handlers-ear  1.7.1 -> 1.0.6
+  com.ericsson.oss.mediation.healthcheck.handlers:cpp-handlers-jar  1.7.1 -> 1.0.6
+  com.ericsson.oss.mediation.healthcheck.handlers:erbs-handlers-ear  1.13.1 -> 1.10.2
+  com.ericsson.oss.mediation.healthcheck.handlers:erbs-handlers-jar  1.13.1 -> 1.10.2
+  com.ericsson.oss.mediation.healthcheck.handlers:mgw-handlers-ear  1.2.1 -> 1.0.3
+  com.ericsson.oss.mediation.healthcheck.handlers:mgw-handlers-jar  1.2.1 -> 1.0.3
+  com.ericsson.oss.mediation.healthcheck.models.flows:cpp-hc-models-model  1.2.1 -> 1.1.1
+  com.ericsson.oss.mediation.healthcheck.models.handlers:cpp-handler-models-model  1.2.1 -> 1.1.1
+  com.ericsson.oss.mediation.ipcm.discovery.handler:ip-ne-discovery-handler-model-jar  1.7.2 -> 1.1.1
+  com.ericsson.oss.mediation.ipcm.discovery.handler:ip-ne-discovery-mediation-handlers-ear  1.10.1 -> 1.1.1
+  com.ericsson.oss.mediation.ipcm.discovery.models.flow:ip-ne-snmp-scan-flow-jar  1.1.8 -> 1.0.5
+  com.ericsson.oss.mediation.model:mediation-service-model-jar  1.0.9 -> 1.5.4
+  com.ericsson.oss.mediation.model.ci:com-ci-model-xml  1.11.1 -> 1.7.1
+  com.ericsson.oss.mediation.model.ci:cpp-ci-model-jar . 1.4.4 -> 1.2.3
+  com.ericsson.oss.mediation.model.ci:cpp-ci-model-models  1.4.4 -> 1.2.3
+  com.ericsson.oss.mediation.model.ci:cpp-cm-ci-model-models  1.3.1 -> 1.0.6
+  com.ericsson.oss.mediation.model.ci:er6000-ci-model-xml  1.8.8 -> 1.6.2
+  com.ericsson.oss.mediation.model.ci:fronthaul-6080-ci-model-models  1.6.4 -> 1.2.1
+  com.ericsson.oss.mediation.model.ci:mini-link-indoor-ci-model-models  1.5.1 -> 1.3.1
+  com.ericsson.oss.mediation.model.ci:mini-link-outdoor-ci-model-models  1.4.1 -> 1.0.9
+  com.ericsson.oss.mediation.model.ci:top-ci-model-jar  1.0.1 -> 1.0.10
+  com.ericsson.oss.mediation.model.ci:top-ci-model-models  1.6.2 -> 1.3.8
+  com.ericsson.oss.mediation.model.cm:er6000-cmfunc-extension  1.8.8 -> 1.6.2
+  com.ericsson.oss.mediation.model.nrm.function:bsc-node-model-common-jar  1.21.7 -> 1.0.6
+  com.ericsson.oss.mediation.model.nrm.function:bsp-node-model-common-jar  1.20.1 -> 1.1.2
+  com.ericsson.oss.mediation.model.nrm.function:epg-node-model-16a-jar  1.6.3 -> 1.1.1
+  com.ericsson.oss.mediation.model.nrm.function:epg-node-model-common-jar  1.16.1 -> 1.7.1
+  com.ericsson.oss.mediation.model.nrm.function:er6000-node-model-16a-jar  1.4.18 -> 1.3.1
+  com.ericsson.oss.mediation.model.nrm.function:er6000-node-model-common-jar  1.11.1 -> 1.1.2
+  com.ericsson.oss.mediation.model.nrm.function:er6274-node-model-common-jar  1.16.1 -> 1.3.1
+  com.ericsson.oss.mediation.model.nrm.function:er6672-node-model-16a-jar  1.10.1 -> 1.9.2
+  com.ericsson.oss.mediation.model.nrm.function:er6672-node-model-16aGA-jar  1.14.26 -> 1.10.1
+  com.ericsson.oss.mediation.model.nrm.function:er6672-node-model-16av2-jar  1.14.26 -> 1.10.1
+  com.ericsson.oss.mediation.model.nrm.function:er6672-node-model-common-jar  1.22.1 -> 1.5.1
+  com.ericsson.oss.mediation.model.nrm.function:er6675-node-model-common-jar  1.16.1 -> 1.3.1
+  com.ericsson.oss.mediation.model.nrm.function:erbs-node-model-13a-jar  4.3.10 -> 4.2.2
+  com.ericsson.oss.mediation.model.nrm.function:erbs-node-model-13b-jar  4.3.16 -> 4.2.2
+  com.ericsson.oss.mediation.model.nrm.function:fronthaul-6080-node-model-common-jar  1.17.1 -> 1.1.1
+  com.ericsson.oss.mediation.model.nrm.function:hssfe-node-model-common-jar  1.11.1 -> 1.0.1
+  com.ericsson.oss.mediation.model.nrm.function:mgw-node-model-common-jar  1.16.4 -> 1.4.4
+  com.ericsson.oss.mediation.model.nrm.function:mini-link-indoor-node-model-16a-jar  1.15.3 -> 1.9.1
+  com.ericsson.oss.mediation.model.nrm.function:mini-link-indoor-node-model-17a-jar  1.8.1 -> 1.4.1
+  com.ericsson.oss.mediation.model.nrm.function:mini-link-indoor-node-model-common-jar  1.27.1 -> 1.4.2
+  com.ericsson.oss.mediation.model.nrm.function:mini-link-outdoor-node-model-common-jar  1.8.1 -> 1.3.1
+  com.ericsson.oss.mediation.model.nrm.function:msrbsv2-node-model-common-jar  1.46.2 -> 1.13.2
+  com.ericsson.oss.mediation.model.nrm.function:radiotnode-node-model-16b-R2JH-jar  1.3.1 -> 1.2.1
+  com.ericsson.oss.mediation.model.nrm.function:radiotnode-node-model-common-jar  1.15.1 -> 1.5.4
+  com.ericsson.oss.mediation.model.nrm.function:rnnode-node-model-common-jar  1.6.1 -> 1.0.11
+  com.ericsson.oss.mediation.model.nrm.function:sapc-node-model-16b-R1A-jar  1.7.2 -> 1.2.5
+  com.ericsson.oss.mediation.model.nrm.function:sapc-node-model-common-jar  1.17.1 -> 1.2.1
+  com.ericsson.oss.mediation.model.nrm.function:vbgf-node-model-common-jar  1.6.2 -> 1.0.1
+  com.ericsson.oss.mediation.model.nrm.function:veme-node-model-common-jar  1.14.1 -> 1.0.1
+  com.ericsson.oss.mediation.model.nrm.function:vepg-node-model-16b-jar  1.8.2 -> 1.3.1
+  com.ericsson.oss.mediation.model.nrm.function:vepg-node-model-common-jar  1.14.1 -> 1.1.2
+  com.ericsson.oss.mediation.model.nrm.function:vipworks-node-model-common-jar  1.13.1 -> 1.0.6
+  com.ericsson.oss.mediation.model.nrm.function:vmrf-node-model-common-jar  1.10.1 -> 1.0.1
+  com.ericsson.oss.mediation.model.nrm.function:vupg-node-model-common-jar  1.10.1 -> 1.1.1
+  com.ericsson.oss.mediation.model.nrm.function:vwcg-node-model-common-jar  1.6.2 -> 1.0.2
+  com.ericsson.oss.mediation.model.nrm.platform:brf-c-models-r1.3-jar  1.3.18 -> 1.0.2
+  com.ericsson.oss.mediation.model.nrm.platform:brf-c-models-r2.0-jar  1.8.22 -> 1.0.1
+  com.ericsson.oss.mediation.model.nrm.platform:cmw-models-r3.5-jar  1.5.26 -> 1.2.1
+  com.ericsson.oss.mediation.model.nrm.platform:cmw-models-r3.6-jar  1.5.26 -> 1.2.1
+  com.ericsson.oss.mediation.model.nrm.platform:cmw-models-r4.0-cp1-jar  1.5.19 -> 1.0.1
+  com.ericsson.oss.mediation.model.nrm.platform:com-models-r4.0-jar  3.5.9 -> 1.1.3
+  com.ericsson.oss.mediation.model.nrm.platform:com-models-r5.1-jar  3.5.9 -> 1.11.4
+  com.ericsson.oss.mediation.model.nrm.platform:com-models-r6.0-jar  3.5.9 -> 1.3.2
+  com.ericsson.oss.mediation.model.nrm.platform:evip-models-r3.0-jar  1.8.1 -> 1.0.1
+  com.ericsson.oss.mediation.model.nrm.platform:lm-models-r5.0-jar  1.8.4 -> 1.0.1
+  com.ericsson.oss.mediation.model.nrm.platform:sec-models-r2-jar  1.15.4 -> 1.3.1
+  com.ericsson.oss.mediation.model.security:ssh-handlerflow-jar  1.5.19 -> 1.4.1
+  com.ericsson.oss.mediation.modeling.tools:com-ecim-network-model-retriever-ear  1.45.1 -> 1.18.3
+  com.ericsson.oss.mediation.modeling.tools:com-ecim-network-model-retriever-plugins  1.45.1 -> 1.18.3
+  com.ericsson.oss.mediation.modeling.tools:cpp-network-model-retriever-ear  1.44.5 -> 1.18.3
+  com.ericsson.oss.mediation.modeling.tools:cpp-network-model-retriever-plugins  1.44.5 -> 1.18.3
+  com.ericsson.oss.mediation.modeling.tools:mib-transformer-jar  3.8.4 -> 3.5.1
+  com.ericsson.oss.mediation.modeling.tools:network-model-connector-ftp-jar  1.45.1 -> 1.18.3
+  com.ericsson.oss.mediation.modeling.tools:network-model-connector-http-jar  1.44.5 -> 1.18.3
+  com.ericsson.oss.mediation.modeling.tools:network-model-connector-moci-jar  1.44.5 -> 1.18.3
+  com.ericsson.oss.mediation.modeling.tools:network-model-connector-netconf-jar  1.45.1 -> 1.18.3
+  com.ericsson.oss.mediation.modeling.tools:network-model-identity-converter-jar  2.0.3 -> 1.5.1
+  com.ericsson.oss.mediation.modeling.tools:network-model-retriever-api-jar  1.40.3 -> 1.13.1
+  com.ericsson.oss.mediation.modeling.tools:network-model-retriever-capability-model-xml  1.40.3 -> 1.18.3
+  com.ericsson.oss.mediation.modeling.tools:network-model-retriever-launcher-jar  1.40.3 -> 1.13.1
+  com.ericsson.oss.mediation.modeling.tools:network-model-retriever-tool-jar  1.45.1 -> 1.18.3
+  com.ericsson.oss.mediation.modeling.tools:network-model-retriever-transformer-api  1.36.4 -> 1.9.3
+  com.ericsson.oss.mediation.modeling.tools:network-model-retriever-transformer-launcher  1.40.3 -> 1.13.1
+  com.ericsson.oss.mediation.modeling.tools:network-model-transformer-api-jar  2.16.1 -> 2.10.1
+  com.ericsson.oss.mediation.modeling.tools:network-model-transformer-jar  3.16.1 -> 3.10.1
+  com.ericsson.oss.mediation.modeling.tools:pm-ebs-transformer-jar  2.1.1 -> 2.0.15
+  com.ericsson.oss.mediation.modeling.tools:pm-events-transformer-jar  3.7.1 -> 3.3.16
+  com.ericsson.oss.mediation.modeling.tools:sgsn-network-model-retriever-ear  1.45.1 -> 1.18.3
+  com.ericsson.oss.mediation.models:er6000-configuration-model-jar  1.3.7 -> 1.2.1
+  com.ericsson.oss.mediation.models:er6000-configuration-model-xml  1.3.9 -> 1.2.1
+  com.ericsson.oss.mediation.models:sgsn-mme-security-mediation-configuration-jar  1.1.16 -> 1.0.4
+  com.ericsson.oss.mediation.models.cm.flows:er6000-sync-node-flow-jar  1.11.1 -> 1.7.1
+  com.ericsson.oss.mediation.models.cm.flows:ipos-cm-copy-config-flow-jar  1.4.9 -> 1.2.3
+  com.ericsson.oss.mediation.models.cm.flows:netconf-ecim-operation-flow-jar  1.8.9 -> 1.5.1
+  com.ericsson.oss.mediation.models.cm.flows:netconf-yang-operation-flow-jar  1.6.1 -> 1.3.1
+  com.ericsson.oss.mediation.models.cm.handlers:ipos-cm-copy-config-handler-ear  1.4.10 -> 1.3.1
+  com.ericsson.oss.mediation.models.cm.handlers:ipos-cm-copy-config-handler-jar  1.4.10 -> 1.3.1
+  com.ericsson.oss.mediation.models.cm.handlers:ipos-cm-copy-config-handler-model  1.5.1 -> 1.3.1
+  com.ericsson.oss.mediation.models.cpp.flows:read-non-persisted-values-flow-jar  1.5.18 -> 1.4.1
+  com.ericsson.oss.mediation.models.cpp.flows:write-node-flow-model  1.4.18 -> 1.3.3
+  com.ericsson.oss.mediation.models.cpp.flows.inventory:CppInventoryFlow-model  1.11.1 -> 1.9.5
+  com.ericsson.oss.mediation.models.cpp.mediation.config.inventory:CppInventoryMediationConfigurationModel-model  1.15.1 -> 1.11.3
+  com.ericsson.oss.mediation.models.flow:ecim-netconf-fm-flow-model-jar  1.11.6 -> 1.7.2
+  com.ericsson.oss.mediation.models.flow:sgsn-mme-netconf-fm-flow-model-jar  1.10.5 -> 1.7.1
+  com.ericsson.oss.mediation.models.flow:snmp-fm-flow-model-jar  1.9.9 -> 1.7.1
+  com.ericsson.oss.mediation.models.netlog.configuration:cpp-netlog-mediation-configuration-model-jar  1.1.5 -> 1.0.3
+  com.ericsson.oss.mediation.models.netlog.configuration:msrbsv1-netlog-mediation-configuration-model-jar  1.2.1 -> 1.1.1
+  com.ericsson.oss.mediation.models.netlog.configuration:sgsn-mme-netlog-mediation-configuration-model-jar  1.1.17 -> 1.0.1
+  com.ericsson.oss.mediation.ned:ned-mediation-handlers-config-jar  1.32.2 -> 1.4.1
+  com.ericsson.oss.mediation.ned:ned-mediation-handlers-ear  1.32.2 -> 1.4.1
+  com.ericsson.oss.mediation.ned:ned-mediation-handlers-models  1.31.1 -> 1.4.1
+  com.ericsson.oss.mediation.ned:ned-mediation-models-models  1.12.1 -> 1.1.1
+  com.ericsson.oss.mediation.netconf:netconf-session-api-dist  1.18.1 -> 1.13.1
+  com.ericsson.oss.mediation.netconf:netconf-session-api-jar  1.18.1 -> 1.13.1
+  com.ericsson.oss.mediation.netconf:netconf-session-impl-ear  1.3.1 -> 1.0.9
+  com.ericsson.oss.mediation.netconf:netconf-session-instrumentation-api-jar  1.18.1 -> 1.13.1
+  com.ericsson.oss.mediation.netconf:netconf-session-instrumentation-jar  1.11.2 -> 1.13.1
+  com.ericsson.oss.mediation.netconf.handlers:netconf-session-builder-handler-ear  1.14.1 -> 1.11.1
+  com.ericsson.oss.mediation.netconf.handlers:netconf-session-destroyer-handler-ear  1.3.1 -> 1.1.2
+  com.ericsson.oss.mediation.netconf.handlers:netconf-session-inbound-config-handler-ear  1.3.2 -> 1.1.1
+  com.ericsson.oss.mediation.netconf.handlers:netconf-session-inbound-config-handler-model-jar  1.4.1 -> 1.1.1
+  com.ericsson.oss.mediation.netconf.handlers:netconf-session-periodic-task-handler-ear  1.4.6 -> 1.3.2
+  com.ericsson.oss.mediation.netconf.handlers:netconf-session-periodic-task-handler-jar  1.4.6 -> 1.3.2
+  com.ericsson.oss.mediation.netconf.handlers:netconf-session-releaser-handler-ear  1.3.1 -> 1.2.2
+  com.ericsson.oss.mediation.netconf.handlers:netconf-session-subscriber-handler-ear  1.4.1 -> 1.3.1
+  com.ericsson.oss.mediation.netconf.handlers:sgsn-mme-netconf-preconnect-handler-ear  1.9.1 -> 1.7.1
+  com.ericsson.oss.mediation.netconf.models:netconf-client-configuration-params-jar  1.10.1 -> 1.12.1
+  com.ericsson.oss.mediation.netconf.models:netconf-client-configuration-params-xml  1.20.1 -> 1.12.1
+  com.ericsson.oss.mediation.netconf.models.handlers:netconf-session-builder-handler-model-jar  1.9.10 -> 1.8.1
+  com.ericsson.oss.mediation.netconf.models.handlers:netconf-session-destroyer-handler-model-jar  1.2.1 -> 1.1.1
+  com.ericsson.oss.mediation.netconf.models.handlers:netconf-session-periodic-task-handler-model-jar  1.1.17 -> 1.0.2
+  com.ericsson.oss.mediation.netconf.models.handlers:netconf-session-releaser-handler-model-jar  1.1.7 -> 1.0.1
+  com.ericsson.oss.mediation.netconf.models.handlers:netconf-session-subscriber-handler-model-jar  1.1.14 -> 1.0.3
+  com.ericsson.oss.mediation.netconf.models.handlers:sgsn-mme-netconf-preconnect-handler-model-jar  1.5.4 -> 1.4.1
+  com.ericsson.oss.mediation.netlog.handlers:msrbsv1-netlog-handler-model-jar  1.1.1 -> 1.0.1
+  com.ericsson.oss.mediation.netlog.models.flow:cpp-netlog-flow-model-jar  1.1.13 -> 1.0.4
+  com.ericsson.oss.mediation.netlog.models.flow:msrbsv1-netlog-flow-model-jar  1.1.1 -> 1.0.1
+  com.ericsson.oss.mediation.netlog.models.flow:sgsn-mme-netlog-flow-model-jar  1.1.6 -> 1.0.3
+  com.ericsson.oss.mediation.nodediscovery:node-discovery-component-ear  1.28.1 -> 1.22.1
+  com.ericsson.oss.mediation.nodediscovery:node-discovery-component-jar  1.28.1 -> 1.22.1
+  com.ericsson.oss.mediation.nodediscovery:node-discovery-generated-code  1.0.13 -> 1.0.9
+  com.ericsson.oss.mediation.pm.events:com-ecim-pm-events-jar  1.1.5 -> 1.0.2
+  com.ericsson.oss.mediation.pm.handlers:com-ecim-pm-async-operations-handler-code-ear  1.23.1 -> 1.14.1
+  com.ericsson.oss.mediation.pm.handlers:com-ecim-pm-async-operations-handler-code-jar  1.23.1 -> 1.14.1
+  com.ericsson.oss.mediation.pm.handlers:com-ecim-pm-eventsm-operation-handler-code-jar  1.24.2 -> 1.8.1
+  com.ericsson.oss.mediation.pm.handlers:com-ecim-pm-file-collection-setup-handler-code-jar  1.46.1 -> 1.18.4
+  com.ericsson.oss.mediation.pm.handlers:epg-vepg-pm-handlers-code-ear  1.13.1 -> 1.0.12
+  com.ericsson.oss.mediation.pm.handlers:epg-vepg-pm-handlers-code-sfwk-config-jar  1.13.1 -> 1.0.12
+  com.ericsson.oss.mediation.pm.handlers:epg-vepg-pm-handlers-collection-code-api  1.13.1 -> 1.0.12
+  com.ericsson.oss.mediation.pm.handlers:epg-vepg-pm-handlers-initiation-code-api  1.13.1 -> 1.0.12
+  com.ericsson.oss.mediation.pm.handlers:epg-vepg-pm-handlers-polling-code-ejb  1.13.1 -> 1.0.12
+  com.ericsson.oss.mediation.pm.handlers:pmic-init-handlers-common-api  1.34.1 -> 1.0.13
+  com.ericsson.oss.mediation.pm.handlers:pmic-init-handlers-common-ejb  1.34.1 -> 1.0.13
+  com.ericsson.oss.mediation.pm.handlers:pmic-init-handlers-common-jar  1.34.1 -> 1.0.13
+  com.ericsson.oss.mediation.pm.handlers.dpsdataretreival:DpsDataRetrievalSetupHandler-ear  1.5.8 -> 1.2.3
+  com.ericsson.oss.mediation.pm.handlers.dpsdataretreival.model:dps-data-retrieval-and-setup-handler-model-code  1.0.1 -> 1.1.2
+  com.ericsson.oss.mediation.pm.handlers.dpsdataretreival.model:dps-data-retrieval-and-setup-handler-model-jar  1.4.6 -> 1.1.2
+  com.ericsson.oss.mediation.pm.handlers.model:epg-vepg-pm-handlers-model-bundle  1.2.13 -> 1.0.11
+  com.ericsson.oss.mediation.pm.handlers.model:erbs-cpp-pmic-collection-handlers-model-jar  1.0.1 -> 1.6.1
+  com.ericsson.oss.mediation.pm.handlers.model:erbs-cpp-pmic-collection-handlers-model-models  1.9.1 -> 1.6.1
+  com.ericsson.oss.mediation.pm.handlers.model:pmic-predef-stats-init-setup-handler-model-xml  1.10.1 -> 1.4.1
+  com.ericsson.oss.mediation.pm.handlers.model:pmic-stats-init-setup-handler-model-jar  1.10.1 -> 1.4.1
+  com.ericsson.oss.mediation.pm.handlers.model:pmic-stats-init-setup-handler-model-xml  1.10.1 -> 1.4.1
+  com.ericsson.oss.mediation.pm.handlers.model:sgsn-mme-pm-handlers-model-bundle  1.12.1 -> 1.7.1
+  com.ericsson.oss.mediation.pm.models.flows:com-ecim-pm-complete-operations-flow-jar  1.15.1 -> 1.9.1
+  com.ericsson.oss.mediation.pm.models.flows:com-ecim-pm-operations-flow-jar  1.32.1 -> 1.12.1
+  com.ericsson.oss.mediation.pm.models.flows:com-ecim-pm-polling-flow-jar  1.23.1 -> 1.9.2
+  com.ericsson.oss.mediation.pm.models.flows:ecim-pm-operations-flow-jar  1.22.1 -> 1.13.1
+  com.ericsson.oss.mediation.pm.models.flows:er6000-pm-file-collection-flow-jar  1.13.1 -> 1.6.1
+  com.ericsson.oss.mediation.pm.models.flows:er6000-pm-file-collection-model-jar  1.3.1 -> 1.6.1
+  com.ericsson.oss.mediation.pm.models.flows:er6000-pm-operations-flow-jar  1.11.1 -> 1.5.1
+  com.ericsson.oss.mediation.pm.models.flows:er6000-pm-polling-flow-jar  1.10.3 -> 1.5.1
+  com.ericsson.oss.mediation.pm.models.flows:msrbsv1-pm-operation-flow-jar  1.6.3 -> 1.1.1
+  com.ericsson.oss.mediation.pm.models.flows:msrbsv1-pm-polling-flow-jar  1.3.1 -> 1.0.1
+  com.ericsson.oss.mediation.pm.models.flows:radiotnode-pm-file-collection-flow-jar  1.6.1 -> 1.2.1
+  com.ericsson.oss.mediation.pm.models.flows:radiotnode-pm-file-collection-model-jar  1.5.3 -> 1.2.1
+  com.ericsson.oss.mediation.pm.models.flows:radiotnode-pm-polling-flow-jar  1.3.1 -> 1.1.2
+  com.ericsson.oss.mediation.pm.models.flows:sgsn-mme-pm-file-collection-flow-jar  1.18.3 -> 1.9.5
+  com.ericsson.oss.mediation.pm.models.flows:sgsn-mme-pm-file-collection-model-jar  1.18.5 -> 1.9.5
+  com.ericsson.oss.mediation.pm.models.handlers:ComEcimPmFileCollectionSetupHandler-jar  1.14.2 -> 1.11.3
+  com.ericsson.oss.mediation.pm.models.handlers:ComEcimPmFileCollectionSetupHandler-model  1.17.1 -> 1.11.3
+  com.ericsson.oss.mediation.pm.models.handlers:com-ecim-pm-async-operations-handler-model-jar  1.6.1 -> 1.4.1
+  com.ericsson.oss.mediation.pm.models.handlers:com-ecim-pm-eventsm-operation-handler-model-jar  1.5.1 -> 1.2.1
+  com.ericsson.oss.mediation.pm.models.handlers:com-ecim-pm-eventsm-polling-handler-model-jar  1.5.1 -> 1.2.1
+  com.ericsson.oss.mediation.pm.models.handlers:com-ecim-pm-eventsm-scanner-comparison-handler-model-jar  1.5.1 -> 1.2.1
+  com.ericsson.oss.mediation.pm.models.handlers:com-ecim-pm-operations-handler-model-jar  1.5.1 -> 1.3.2
+  com.ericsson.oss.mediation.pm.models.handlers:com-ecim-pm-polling-handler-model-jar  1.6.1 -> 1.4.1
+  com.ericsson.oss.mediation.pm.models.handlers:ecim-pm-operations-handler-model-jar  1.5.14 -> 1.3.7
+  com.ericsson.oss.mediation.pmic.collection.flow.model:FileCollectionFlow-model  1.46.1 -> 1.30.1
+  com.ericsson.oss.mediation.pmic.collection.flsworker.impl:fls-worker-code-api  1.2.1 -> 1.1.1
+  com.ericsson.oss.mediation.pmic.collection.flsworker.impl:fls-worker-code-ear  1.2.1 -> 1.1.1
+  com.ericsson.oss.mediation.pmic.collection.flsworker.impl:fls-worker-code-ejb  1.2.1 -> 1.1.1
+  com.ericsson.oss.mediation.pmic.collection.handlers.model:CellTraceLocationFileHandler-model  1.31.1 -> 1.24.1
+  com.ericsson.oss.mediation.pmic.collection.handlers.model:CellTraceMultipleFilesSetupHandler-model  1.31.1 -> 1.24.1
+  com.ericsson.oss.mediation.pmic.collection.handlers.model:CheckFileExistsHandler-model  1.31.1 -> 1.24.1
+  com.ericsson.oss.mediation.pmic.collection.handlers.model:ContextPropagationHandler-model  1.31.1 -> 1.24.1
+  com.ericsson.oss.mediation.pmic.collection.handlers.model:FdnHashSymLinkHandler-model  1.31.1 -> 1.24.1
+  com.ericsson.oss.mediation.pmic.collection.handlers.model:FileCollectionNotificationSenderHandler-model  1.31.1 -> 1.24.1
+  com.ericsson.oss.mediation.pmic.collection.handlers.model:FilteredMultipleFileListBuilder-model  1.31.1 -> 1.24.1
+  com.ericsson.oss.mediation.pmic.collection.handlers.model:MissedFilesListHandler-model  1.31.1 -> 1.24.1
+  com.ericsson.oss.mediation.pmic.collection.handlers.model:RoundRobinSymLinkHandler-model  1.31.1 -> 1.24.1
+  com.ericsson.oss.mediation.pmic.collection.handlers.model:SymLinkHandler-model  1.31.1 -> 1.24.1
+  com.ericsson.oss.mediation.pmic.collection.handlers.model:fls-handler-model-jar  1.2.1 -> 1.0.10
+  com.ericsson.oss.mediation.pmic.modules:pfm-schemas-util-api-jar  1.61.2 -> 1.18.5
+  com.ericsson.oss.mediation.policy:er6000-router-policy-cache-config-jar  1.13.1 -> 1.6.3
+  com.ericsson.oss.mediation.policy:er6000-router-policy-config-jar  1.13.1 -> 1.6.3
+  com.ericsson.oss.mediation.policy:er6000-router-policy-dist  1.13.1 -> 1.6.3
+  com.ericsson.oss.mediation.policy:er6000-router-policy-ear  1.13.1 -> 1.6.3
+  com.ericsson.oss.mediation.policy:er6000-router-policy-id-jar  1.13.1 -> 1.6.3
+  com.ericsson.oss.mediation.resolver:configure-attribute-resolver-jar  1.2.24 -> 1.1.3
+  com.ericsson.oss.mediation.resolver:dps-attribute-resolver-jar  1.11.5 -> 1.8.1
+  com.ericsson.oss.mediation.resolver:request-attribute-resolver-jar  1.3.27 -> 1.2.1
+  com.ericsson.oss.mediation.resolver:sfk-config-attribute-resolver-jar  1.1.20 -> 1.0.1
+  com.ericsson.oss.mediation.util:cba-netconf-rpc-api . 1.33.3 -> 1.5.4
+  com.ericsson.oss.mediation.util:cba-netconf-rpc-jar  1.33.3 -> 1.15.1
+  com.ericsson.oss.models.cm.mediation.flows:sync-node-flow-model  1.7.1 -> 1.6.2
+  com.ericsson.oss.models.networkExplorer:networkExplorerModels-api  1.10.7 -> 1.8.4
+  com.ericsson.oss.models.networkExplorer:networkExplorerModels-jar  1.10.7 -> 1.8.4
+  com.ericsson.oss.models.networkExplorer:networkExplorerModels-model  1.12.3 -> 1.8.4
+  com.ericsson.oss.models.nrm.erbs.mediation.config:CmSyncMediationConfigurationModel-model  1.13.18 -> 1.12.2
+  com.ericsson.oss.models.nrm.erbs.mediation.config:ErbsMediationConfigurationModel-model  1.13.18 -> 1.12.2
+  com.ericsson.oss.models.pmic.mediation.handlers:PMICDpsHandler-ear  1.36.1 -> 1.25.2
+  com.ericsson.oss.models.pmic.mediation.handlers:PMICDpsHandler-model  1.22.8 -> 1.20.4
+  com.ericsson.oss.models.pmic.mediation.handlers.dpshandlers:PMICDpsHandler-code  1.36.1 -> 1.25.2
+  com.ericsson.oss.models.presentationServer:presentationServerModels-model  1.8.12 -> 1.6.3
+  com.ericsson.oss.nbi.fm.model:corbainterfacemodel-jar  1.10.2 -> 1.7.1
+  com.ericsson.oss.nbi.fm.model:corbainterfacemodel-model  1.14.1 -> 1.7.1
+  com.ericsson.oss.presentation.server:ModelInformationService-ear  1.36.1 -> 1.26.1
+  com.ericsson.oss.presentation.server:web-push-model-xml  1.11.6 -> 1.9.1
+  com.ericsson.oss.presentation.server.scripting:server-scripting-ear  1.17.1 -> 1.12.1
+  com.ericsson.oss.services:alarmstatisticalservice-api  1.31.1 -> 1.18.1
+  com.ericsson.oss.services:alarmstatisticalservice-ear  1.31.1 -> 1.18.1
+  com.ericsson.oss.services:alarmstatisticalservice-jar  1.31.1 -> 1.18.1
+  com.ericsson.oss.services:cm-history-cleaner ........ 1.2.1 -> 1.0.10
+  com.ericsson.oss.services:cm-history-dlms-jar ...... 1.3.10 -> 1.0.10
+  com.ericsson.oss.services:kpi-specification-service-api-jar  1.10.4 -> 1.7.2
+  com.ericsson.oss.services.acs:activity-service-api ... 6.3.1 -> 4.6.7
+  com.ericsson.oss.services.acs:activity-service-ear ... 6.3.1 -> 4.6.7
+  com.ericsson.oss.services.acs:activity-service-jar ... 6.3.1 -> 4.6.7
+  com.ericsson.oss.services.acs:activity-service-model . 6.3.1 -> 4.6.7
+  com.ericsson.oss.services.ars:alarmroutemanagementservice-api  1.28.1 -> 1.17.1
+  com.ericsson.oss.services.ars:alarmroutemanagementservice-ear  1.28.1 -> 1.17.1
+  com.ericsson.oss.services.autoprovisioning:ap-data-model-erbs-model  1.74.4 -> 1.42.9
+  com.ericsson.oss.services.cli.alias.model:clialias-api  1.1.3 -> 1.2.3
+  com.ericsson.oss.services.cli.alias.model:clialias-models  1.3.13 -> 1.2.3
+  com.ericsson.oss.services.cm:batch-processing-model-jar  1.32.3 -> 1.21.1
+  com.ericsson.oss.services.cm:cm-common-api ........ 1.24.3 -> 1.7.266
+  com.ericsson.oss.services.cm:cm-common-dtomapping . 1.24.3 -> 1.7.266
+  com.ericsson.oss.services.cm:cm-common-log ........ 1.24.3 -> 1.7.266
+  com.ericsson.oss.services.cm:cm-common-modelservice-extensions  1.24.3 -> 1.7.266
+  com.ericsson.oss.services.cm:cm-common-search ..... 1.24.3 -> 1.7.266
+  com.ericsson.oss.services.cm:cm-config-handler-ear . 1.32.1 -> 1.23.2
+  com.ericsson.oss.services.cm:cm-config-parser-api .. 1.32.1 -> 1.23.2
+  com.ericsson.oss.services.cm:cm-config-parser-jar .. 1.32.1 -> 1.23.2
+  com.ericsson.oss.services.cm:cm-config-service-api . 1.40.1 -> 1.24.2
+  com.ericsson.oss.services.cm:cm-config-service-common  1.40.1 -> 1.24.2
+  com.ericsson.oss.services.cm:cm-config-service-ear . 1.40.1 -> 1.24.2
+  com.ericsson.oss.services.cm:cm-parameters-model-jar  1.15.1 -> 1.5.1
+  com.ericsson.oss.services.cm:cm-parameters-model-model  1.15.1 -> 1.5.1
+  com.ericsson.oss.services.cm:historical-service-api-jar  2.2.6 -> 2.0.5
+  com.ericsson.oss.services.cm:script-engine-editor-spi  1.34.25 -> 1.0.10
+  com.ericsson.oss.services.cm.events:cm-events-data-change-event-processor-model-models  1.10.1 -> 1.4.1
+  com.ericsson.oss.services.cm.events:cm-events-data-change-listener-ear  1.9.8 -> 1.3.2
+  com.ericsson.oss.services.cm.events:cm-events-data-change-listener-model-jar  1.9.8 -> 1.3.2
+  com.ericsson.oss.services.cm.events:cm-events-data-change-listener-model-models  1.9.1 -> 1.3.2
+  com.ericsson.oss.services.cm.events:cm-events-search-jar  1.18.1 -> 1.8.1
+  com.ericsson.oss.services.cm.events:cm-events-service-api-jar  1.4.4 -> 1.2.4
+  com.ericsson.oss.services.cm.events:cm-events-service-common-jar  1.18.1 -> 1.8.1
+  com.ericsson.oss.services.cm.events:cm-events-service-ear  1.18.1 -> 1.8.1
+  com.ericsson.oss.services.cm.events:cm-events-service-filter-jar  1.18.1 -> 1.8.1
+  com.ericsson.oss.services.cm.events:cm-events-service-model-jar  1.18.1 -> 1.8.1
+  com.ericsson.oss.services.cm.events:cm-events-service-model-models  1.14.1 -> 1.8.1
+  com.ericsson.oss.services.cm.export:export-service-api-jar  1.9.1 -> 1.0.73
+  com.ericsson.oss.services.cm.export:metrics-service . 1.34.3 -> 1.2.6
+  com.ericsson.oss.services.cm.export:transformer-api-jar  1.16.1 -> 1.11.1
+  com.ericsson.oss.services.cm.export:transformer-edff-ear  1.46.2 -> 1.2.6
+  com.ericsson.oss.services.cm.export:transformer-edff-model-jar  1.46.2 -> 1.2.6
+  com.ericsson.oss.services.cm.export:transformer-edff-model-models  1.43.3 -> 1.2.6
+  com.ericsson.oss.services.cm.export:transformer-edff-model-service-extension  1.46.2 -> 1.2.6
+  com.ericsson.oss.services.cm.import:import-batch-model-jar  1.8.2 -> 1.0.5
+  com.ericsson.oss.services.cm.import:import-service-api-jar  1.5.1 -> 1.1.53
+  com.ericsson.oss.services.cm.upgradeindependence:upgrade-independence-service-api  1.36.1 -> 1.11.17
+  com.ericsson.oss.services.cm.upgradeindependence:upgrade-independence-service-ear  1.36.1 -> 1.11.17
+  com.ericsson.oss.services.cpp.nrm.inventory:CppSoftwareInventoryModel-model  1.16.1 -> 1.12.1
+  com.ericsson.oss.services.eniq.topologyservice:eniq-topology-service-common-jar  1.0.117 -> 1.0.28
+  com.ericsson.oss.services.eniq.topologyservice:eniq-topology-service-common-test  1.0.117 -> 1.0.28
+  com.ericsson.oss.services.eniq.topologyservice:eniq-topology-service-impl-ear  1.40.1 -> 1.23.2
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-capability  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-config-model  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-filter-epg  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-filter-erbs  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-filter-mgw  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-filter-mme  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-filter-pico  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-filter-radio-t-node  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-filter-radionode  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-filter-rbs  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-filter-rnc  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-filter-router-6672  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eniq.topologyservice.model:eniq-topology-service-model-filter-sapc  1.58.2 -> 1.29.5
+  com.ericsson.oss.services.eps:eps-api .............. 3.22.1 -> 3.18.1
+  com.ericsson.oss.services.eps:eps-internal-model ... 3.22.1 -> 3.18.1
+  com.ericsson.oss.services.esn:esn-service-models-config-model  1.9.1 -> 1.3.1
+  com.ericsson.oss.services.fm:alarm-opi-service-api ... 1.4.1 -> 1.3.1
+  com.ericsson.oss.services.fm:alarm-opi-service-ear ... 1.4.1 -> 1.3.1
+  com.ericsson.oss.services.fm:alarm-opi-service-ejb ... 1.4.1 -> 1.3.1
+  com.ericsson.oss.services.fm:fm-common-ear .......... 1.16.2 -> 1.0.8
+  com.ericsson.oss.services.fm:fm-common-event-buffering-jar  1.15.1 -> 1.0.8
+  com.ericsson.oss.services.fm:fm-common-jar .......... 1.17.1 -> 1.0.8
+  com.ericsson.oss.services.fm:fm-common-targettype-handler-jar  1.1.1 -> 1.0.8
+  com.ericsson.oss.services.fm:fm-utility-service-api .. 1.7.7 -> 1.2.2
+  com.ericsson.oss.services.fm:fm-utility-service-ear .. 1.7.7 -> 1.2.2
+  com.ericsson.oss.services.fm:internal-alarm-service-api  1.16.4 -> 1.12.1
+  com.ericsson.oss.services.fm:internal-alarm-service-ear  1.16.4 -> 1.12.1
+  com.ericsson.oss.services.fm:internal-alarm-service-jar  1.16.4 -> 1.12.1
+  com.ericsson.oss.services.fm.alarmhistory:alarm-change-listener-ear  1.20.2 -> 1.8.2
+  com.ericsson.oss.services.fm.errevents:errevents-service-api  1.5.1 -> 1.4.6
+  com.ericsson.oss.services.fm.errevents:errevents-service-ear  1.5.1 -> 1.4.6
+  com.ericsson.oss.services.fm.errevents:errevents-service-jar  1.5.1 -> 1.4.6
+  com.ericsson.oss.services.fm.models:alarm-cpi-details-model-xml  1.1.8 -> 1.0.1
+  com.ericsson.oss.services.fm.models:alarmpersistencemodel-jar  1.25.1 -> 1.19.1
+  com.ericsson.oss.services.fm.models:alarmpersistencemodel-model  1.26.1 -> 1.19.1
+  com.ericsson.oss.services.fm.models:fm-fmx-model-jar  1.12.4 -> 1.7.3
+  com.ericsson.oss.services.fm.models:fm-target-parameters-model-jar  1.9.1 -> 1.2.2
+  com.ericsson.oss.services.fm.models:fm-target-parameters-utils-jar  1.9.1 -> 1.2.2
+  com.ericsson.oss.services.fm.models:fmfmxmodel-model  1.12.4 -> 1.7.3
+  com.ericsson.oss.services.fm.models:fmmediationeventmodel-jar  1.39.1 -> 1.20.1
+  com.ericsson.oss.services.fm.models:fmmediationeventmodel-model  1.39.1 -> 1.20.1
+  com.ericsson.oss.services.fm.services:alarmsupervisioncontroller-api  1.40.1 -> 1.21.2
+  com.ericsson.oss.services.fm.services:alarmsupervisioncontroller-ear  1.40.1 -> 1.21.2
+  com.ericsson.oss.services.fm.services:alarmsupervisioncontroller-jar  1.40.1 -> 1.21.2
+  com.ericsson.oss.services.healthcheck:hc-service-api  1.33.2 -> 1.19.3
+  com.ericsson.oss.services.healthcheck:hc-service-ear  1.33.2 -> 1.19.3
+  com.ericsson.oss.services.healthcheck:hc-service-jar  1.33.2 -> 1.19.3
+  com.ericsson.oss.services.healthcheck.models:hc-service-internal-model-jar  1.15.1 -> 1.14.7
+  com.ericsson.oss.services.healthcheck.models:hc-service-model-jar  1.15.1 -> 1.14.7
+  com.ericsson.oss.services.healthcheck.models:hc-service-model-model  1.15.1 -> 1.14.7
+  com.ericsson.oss.services.ipsm.sd:ipsm-service-definition-service-api  3.16.1 -> 3.9.3
+  com.ericsson.oss.services.ipsm.sd:ipsm-service-definition-service-ear  3.16.1 -> 3.9.3
+  com.ericsson.oss.services.ipsm.sd:ipsm-service-definition-service-jar  3.16.1 -> 3.9.3
+  com.ericsson.oss.services.ipsm.sm:ipsm-service-manager-service-api  3.16.1 -> 3.9.3
+  com.ericsson.oss.services.ipsm.sm:ipsm-service-manager-service-ear  3.16.1 -> 3.9.3
+  com.ericsson.oss.services.ipsm.sm:ipsm-service-manager-service-jar  3.16.1 -> 3.9.3
+  com.ericsson.oss.services.ipsm.template:ipsm-template-manager-service-api  1.11.1 -> 1.10.4
+  com.ericsson.oss.services.ipsm.template:ipsm-template-manager-service-ear  1.11.1 -> 1.10.4
+  com.ericsson.oss.services.ipsm.template:ipsm-template-manager-service-jar  1.11.1 -> 1.10.4
+  com.ericsson.oss.services.model:smrsservicemodel-jar  1.39.2 -> 1.20.1
+  com.ericsson.oss.services.model:smrsservicemodel-models  1.40.1 -> 1.20.1
+  com.ericsson.oss.services.model:upgrade-independence-models-config-jar  1.23.3 -> 1.9.12
+  com.ericsson.oss.services.model:upgrade-independence-models-events-jar  1.23.3 -> 1.9.12
+  com.ericsson.oss.services.model:upgrade-independence-models-jar  1.23.3 -> 1.9.12
+  com.ericsson.oss.services.model:upgrade-independence-models-model  1.23.3 -> 1.9.12
+  com.ericsson.oss.services.model.autoprovisioning.core:ai-core-webmodel-jar  1.5.6 -> 1.3.3
+  com.ericsson.oss.services.model.geolocation:geo-location-model-jar  1.3.3 -> 1.2.1
+  com.ericsson.oss.services.model.geolocation:geo-location-model-xml  1.5.1 -> 1.2.1
+  com.ericsson.oss.services.model.ned:cm-function-model-models  1.10.1 -> 1.6.1
+  com.ericsson.oss.services.model.ned:network-element-definition-model-jar  3.27.3 -> 3.8.1
+  com.ericsson.oss.services.model.ned:network-element-definition-model-models  3.28.1 -> 3.8.1
+  com.ericsson.oss.services.model.ned:pm-function-model-jar  1.8.8 -> 1.6.1
+  com.ericsson.oss.services.model.ned:pm-function-model-models  1.11.1 -> 1.6.1
+  com.ericsson.oss.services.model.ned:security-function-model-models  1.6.1 -> 1.2.1
+  com.ericsson.oss.services.model.ned:shm-function-model-models  1.16.3 -> 1.10.1
+  com.ericsson.oss.services.model.onrm:oss-top-model-jar  2.3.1 -> 2.1.6
+  com.ericsson.oss.services.model.onrm:oss-top-model-models  2.4.4 -> 2.1.6
+  com.ericsson.oss.services.neconnection:neconnection-service-api  1.15.3 -> 1.5.6
+  com.ericsson.oss.services.neconnection:neconnection-service-ear  1.15.3 -> 1.5.6
+  com.ericsson.oss.services.nhm:kpi-calculation-flow-model-jar  1.44.1 -> 1.22.2
+  com.ericsson.oss.services.nodecli.model:nodecli-model-jar  1.4.4 -> 1.2.1
+  com.ericsson.oss.services.pm:pmul-service-api ....... 1.36.2 -> 1.4.5
+  com.ericsson.oss.services.pm:pmul-service-config-jar  1.36.2 -> 1.4.5
+  com.ericsson.oss.services.pm:pmul-service-ear ....... 1.36.2 -> 1.4.5
+  com.ericsson.oss.services.pm:pmul-service-event-jar . 1.36.2 -> 1.4.5
+  com.ericsson.oss.services.pm:pmul-service-jar ....... 1.36.2 -> 1.4.5
+  com.ericsson.oss.services.pm:pmul-service-model ..... 1.35.5 -> 1.4.5
+  com.ericsson.oss.services.pm:pmul-service-model-jar . 1.36.2 -> 1.4.5
+  com.ericsson.oss.services.pm:pmul-service-sfwk-params-jar  1.36.2 -> 1.4.5
+  com.ericsson.oss.services.pm.ebs:ebs-export-transformation-model-service-extension  1.6.3 -> 1.0.3
+  com.ericsson.oss.services.pm.ebs:ebs-export-transformation-provider-ear  1.6.3 -> 1.0.3
+  com.ericsson.oss.services.pm.ebs:ebs-topology-service-model-models  1.9.1 -> 1.1.3
+  com.ericsson.oss.services.pmic:pmic-service-common-module-api-util  1.27.2 -> 1.3.1
+  com.ericsson.oss.services.pmic:pmic-service-common-module-model-cache  1.43.1 -> 1.6.4
+  com.ericsson.oss.services.pmic:pmic-service-common-module-model-dps  1.43.1 -> 1.6.4
+  com.ericsson.oss.services.pmic:pmic-service-common-module-model-event  1.43.1 -> 1.6.4
+  com.ericsson.oss.services.pmic:pmic-service-common-module-model-jaxb  1.43.1 -> 1.6.4
+  com.ericsson.oss.services.pmic:pmic-service-common-module-model-util  1.43.1 -> 1.6.4
+  com.ericsson.oss.services.pmic:pmic-service-common-module-model-xmls  1.43.1 -> 1.6.4
+  com.ericsson.oss.services.pmic:pmic-service-sub-cellrelation-model-xmls  1.3.1 -> 1.0.1
+  com.ericsson.oss.services.pmic:pmic-service-sub-celltraffic-model-config  1.5.5 -> 1.3.1
+  com.ericsson.oss.services.pmic:pmic-service-sub-celltraffic-model-xmls  1.5.11 -> 1.3.1
+  com.ericsson.oss.services.pmic:pmic-service-sub-moinstance-model-xmls  1.1.18 -> 1.0.8
+  com.ericsson.oss.services.security.accesscontrol:access-control-service-api  1.12.2 -> 1.0.5
+  com.ericsson.oss.services.security.accesscontrol:com-aa-model-jar  1.3.17 -> 1.2.9
+  com.ericsson.oss.services.security.accesscontrol:com-aa-model-model  1.3.17 -> 1.2.9
+  com.ericsson.oss.services.security.accesscontrol:com-aa-service-ear  1.41.1 -> 1.17.1
+  com.ericsson.oss.services.security.accesscontrol:policy-engine-service-api-jar  1.2.8 -> 1.1.12
+  com.ericsson.oss.services.security.accesscontrol:ui-access-control-service-api  1.15.1 -> 1.10.4
+  com.ericsson.oss.services.security.accesscontrol:ui-access-control-service-ear  1.15.1 -> 1.10.4
+  com.ericsson.oss.services.security.accesscontrol:ui-access-control-service-ejb  1.15.1 -> 1.10.4
+  com.ericsson.oss.services.security.identitymgmt:generic-identity-mgmt-core-api-jar  1.30.1 -> 1.13.24
+  com.ericsson.oss.services.security.identitymgmt:generic-identity-mgmt-exception-handlers-jar  1.0.2 -> 1.0.35
+  com.ericsson.oss.services.security.identitymgmt:generic-identity-mgmt-model-model  1.4.1 -> 1.1.5
+  com.ericsson.oss.services.security.identitymgmt:generic-identity-mgmt-service-jar  1.54.6 -> 1.16.18
+  com.ericsson.oss.services.security.identitymgmt:target-handlers-ear  1.12.1 -> 1.7.1
+  com.ericsson.oss.services.security.identitymgmt:target-handlers-jar  1.12.1 -> 1.7.1
+  com.ericsson.oss.services.security.identitymgmt:target-handlers-model-jar  1.3.1 -> 1.7.1
+  com.ericsson.oss.services.security.model:ssh-handlerflow-config-jar  1.4.18 -> 1.3.7
+  com.ericsson.oss.services.shm:activity-information  1.98.12 -> 1.45.10
+  com.ericsson.oss.services.shm:cppinventorysynchservice-api  1.98.12 -> 1.45.10
+  com.ericsson.oss.services.shm:job-common-api ..... 1.98.12 -> 1.45.10
+  com.ericsson.oss.services.shm:shm-cli-api .......... 1.53.2 -> 1.24.1
+  com.ericsson.oss.services.shm:shm-cli-ear .......... 1.53.2 -> 1.24.1
+  com.ericsson.oss.services.shm:shm-cli-parser-api ... 1.53.2 -> 1.24.1
+  com.ericsson.oss.services.shm:shm-cli-parser-jar ... 1.53.2 -> 1.24.1
+  com.ericsson.oss.services.shm:shm-common-api ..... 1.98.12 -> 1.45.10
+  com.ericsson.oss.services.shm:shm-common-base-api  1.23.34 -> 1.15.90
+  com.ericsson.oss.services.shm:shm-common-constants  1.23.34 -> 1.16.1
+  com.ericsson.oss.services.shm:shm-common-ecim .... 1.23.34 -> 1.15.77
+  com.ericsson.oss.services.shm:shm-common-enums ... 1.23.34 -> 1.15.77
+  com.ericsson.oss.services.shm:shm-common-exception  1.23.34 -> 1.15.77
+  com.ericsson.oss.services.shm:shm-common-model-service-api  1.23.34 -> 1.15.77
+  com.ericsson.oss.services.shm:shm-common-persistence-api  1.23.34 -> 1.16.1
+  com.ericsson.oss.services.shm:shm-common-recording  1.23.34 -> 1.16.1
+  com.ericsson.oss.services.shm:shm-inventory-license-common  1.63.2 -> 1.6.6
+  com.ericsson.oss.services.shm:shm-inventory-license-ecim-api  1.63.2 -> 1.6.6
+  com.ericsson.oss.services.shm:shm-inventory-sw-remote-api  1.63.2 -> 1.14.1
+  com.ericsson.oss.services.shm:shm-jobservice-remote-api  1.98.12 -> 1.45.10
+  com.ericsson.oss.services.shm:shm-license-mgmt-api-jar  1.10.1 -> 1.2.12
+  com.ericsson.oss.services.shm:shm-licensemanagement-api  1.64.2 -> 1.23.1
+  com.ericsson.oss.services.shm:shm-licensemanagement-api-remote  1.64.2 -> 1.23.1
+  com.ericsson.oss.services.shm:shm-softwarepackage-mgmt-api-jar  1.8.1 -> 1.2.11
+  com.ericsson.oss.services.shm:shm-softwarepackagemanagement-exceptions  1.72.1 -> 1.23.1
+  com.ericsson.oss.services.shm:shm-softwarepackagemanagement-remoteapi  1.72.1 -> 1.23.1
+  com.ericsson.oss.services.shm:shmjobservice-api .. 1.98.12 -> 1.45.10
+  com.ericsson.oss.services.shm.model:ShmModelExtension-model  1.39.1 -> 1.26.1
+  com.ericsson.oss.services.shm.model.licensekeyinfo:LicenseKeyInfoModel-model  1.15.2 -> 1.10.2
+  com.ericsson.oss.services.shm.model.upgradepackage:UpgradepackageModel-model  1.20.2 -> 1.12.1
+  com.ericsson.oss.services.shm.models:shm-backup-model-xml  1.1.1 -> 1.0.5
+  com.ericsson.oss.services.shm.models:shm-models-jar  1.71.6 -> 1.34.2
+  com.ericsson.oss.services.shm.models:shm-models-model  1.72.1 -> 1.34.2
+  com.ericsson.oss.services.wfs:wfs-api .............. 2.12.2 -> 2.10.9
+  com.ericsson.oss.services.wfs:wfs-bpmn-model ....... 2.12.2 -> 2.10.9
+  com.ericsson.oss.services.wfs:wfs-camunda-plugins .. 2.12.2 -> 2.10.9
+  com.ericsson.oss.services.wfs:wfs-jee-ear .......... 2.12.2 -> 2.10.9
+  com.ericsson.oss.services.wfs:wfs-jee-int .......... 2.12.2 -> 2.10.9
+  com.ericsson.oss.services.wfs:wfs-jee-local-api .... 2.12.2 -> 2.10.9
+  com.ericsson.oss.services.wfs:wfs-jee-remote-api ... 2.12.2 -> 2.10.9
+  com.ericsson.oss.services.wfs:wfs-jee-task ......... 2.12.2 -> 2.10.9
+  com.ericsson.oss.services.wfs:wfs-jse .............. 2.12.2 -> 2.10.9
+  com.ericsson.oss.services.wfs:wfs-model ............ 1.2.28 -> 1.0.39
+  com.ericsson.oss.services.wfs:wfs-model-jar ........ 1.2.21 -> 1.0.32
+  com.ericsson.oss.services.wfs:wfs-task-api ......... 2.12.2 -> 2.10.9

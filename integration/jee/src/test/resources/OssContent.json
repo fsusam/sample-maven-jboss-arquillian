@@ -1,0 +1,6 @@
+{
+  "enm_ui_host": "stubbed-enm",
+  "enm_ui_username": "Administrator",
+  "enm_ui_password": "TestPassw0rd",
+  "enm_cm_data_loading_cron": "0 0 2 ? * MON,TUE,WED,THU,FRI *"
+}

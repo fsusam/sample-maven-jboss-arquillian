@@ -1,0 +1,6 @@
+{
+  "enm_ui_host": "enm12-london",
+  "enm_ui_username": "eson_user",
+  "enm_ui_password": "enm12admin",
+  "enm_cm_data_loading_cron": "0 0 2 ? * MON,TUE,WED,THU,FRI *"
+}

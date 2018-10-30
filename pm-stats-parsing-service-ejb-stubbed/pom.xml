@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>pm-stats-processor-enm-testsuite</artifactId>
+        <groupId>com.ericsson.oss.services.sonom</groupId>
+        <version>1.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>pm-stats-parsing-service-ejb-stubbed</artifactId>
+    <packaging>ejb</packaging>
+    <name>[pm-stats-parsing-service] Stubbed EJB module</name>
+
+    <properties>
+        <version.maven-ejb-plugin>2.3</version.maven-ejb-plugin>
+    </properties>
+
+    <dependencies>
+        <!-- SON Dependencies -->
+        <dependency>
+            <groupId>com.ericsson.oss.services.sonom</groupId>
+            <artifactId>pm-stats-parsing-service-api-jar</artifactId>
+        </dependency>
+
+        <!-- JEE Dependencies -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- 3PP Dependencies -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <!-- This plugin generates J2EE Enterprise Javabean (EJB) file as well as the associated client jar. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ejb-plugin</artifactId>
+                <version>${version.maven-ejb-plugin}</version>
+                <configuration>
+                    <ejbVersion>${version.ejb}</ejbVersion>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jboss.as.plugins</groupId>
+                <artifactId>jboss-as-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

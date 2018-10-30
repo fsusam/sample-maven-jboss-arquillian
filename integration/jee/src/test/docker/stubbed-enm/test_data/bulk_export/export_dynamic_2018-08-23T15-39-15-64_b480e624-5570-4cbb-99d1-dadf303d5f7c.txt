@@ -1,0 +1,64 @@
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00002,ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=1"
+administrativeState : UNLOCKED
+
+
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00002,ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=1,RetSubUnit=1"
+calibrationStatus : UNKNOWN
+electricalAntennaTilt : 0
+maxTilt : -1000
+minTilt : -1000
+operationalState : DISABLED
+
+
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00002,ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaUnit=1"
+mechanicalAntennaTilt : 0
+
+
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00002,ManagedElement=1,Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=1"
+administrativeState : UNLOCKED
+
+
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00002,ManagedElement=1,Equipment=1,AntennaUnitGroup=2,AntennaNearUnit=1,RetSubUnit=1"
+calibrationStatus : UNKNOWN
+electricalAntennaTilt : 0
+maxTilt : -1000
+minTilt : -1000
+operationalState : DISABLED
+
+
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00002,ManagedElement=1,Equipment=1,AntennaUnitGroup=2,AntennaUnit=1"
+mechanicalAntennaTilt : 0
+
+
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00002,ManagedElement=1,Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=1"
+administrativeState : UNLOCKED
+
+
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00002,ManagedElement=1,Equipment=1,AntennaUnitGroup=3,AntennaNearUnit=1,RetSubUnit=1"
+calibrationStatus : UNKNOWN
+electricalAntennaTilt : 0
+maxTilt : -1000
+minTilt : -1000
+operationalState : DISABLED
+
+
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00002,ManagedElement=1,Equipment=1,AntennaUnitGroup=3,AntennaUnit=1"
+mechanicalAntennaTilt : 0
+
+
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00001,ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=1"
+administrativeState : UNLOCKED
+
+
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00001,ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaNearUnit=1,RetSubUnit=1"
+calibrationStatus : UNKNOWN
+electricalAntennaTilt : 0
+maxTilt : -1000
+minTilt : -1000
+operationalState : DISABLED
+
+
+FDN : "SubNetwork=ERBS-SUBNW-1,MeContext=netsim_LTE103ERBS00001,ManagedElement=1,Equipment=1,AntennaUnitGroup=1,AntennaUnit=1"
+mechanicalAntennaTilt : 0
+
+

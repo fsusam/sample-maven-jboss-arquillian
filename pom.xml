@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>pm-stats-processor-enm</artifactId>
+        <groupId>com.ericsson.oss.services.sonom</groupId>
+        <version>1.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>pm-stats-processor-enm-testsuite</artifactId>
+    <packaging>pom</packaging>
+    <name>[${project.parent.artifactId}] TestSuite</name>
+
+    <modules>
+        <module>integration</module>
+        <module>pm-stats-parsing-service-ear-stubbed</module>
+        <module>pm-stats-parsing-service-ejb-stubbed</module>
+    </modules>
+
+    <properties>
+        <!-- Set this tag to false to run the integration test with maven -->
+        <maven.test.skip>true</maven.test.skip>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Arquillian BOM. It is used in JEE/JEE Cluster integration tests. -->
+            <dependency>
+                <groupId>org.jboss.arquillian</groupId>
+                <artifactId>arquillian-bom</artifactId>
+                <version>${version.arquillian-bom}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+
+        <!-- Dependency for WELD CDI (Contexts and Dependency Injection) -->
+        <dependency>
+            <groupId>org.jboss.weld</groupId>
+            <artifactId>weld-core</artifactId>
+            <version>${version.weld}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Dependency for WELD CDI (Contexts and Dependency Injection) in SE/standalone environment -->
+        <dependency>
+            <groupId>org.jboss.weld.se</groupId>
+            <artifactId>weld-se-core</artifactId>
+            <version>${version.weld}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <!-- Use '-Dts' to activate testsuite, used in Jenkins job -->
+        <profile>
+            <id>activate_testsuite</id>
+            <activation>
+                <property>
+                    <name>ts</name>
+                </property>
+            </activation>
+            <properties>
+                <maven.test.skip>false</maven.test.skip>
+            </properties>
+        </profile>
+    </profiles>
+</project>

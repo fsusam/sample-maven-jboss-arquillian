@@ -1,0 +1,61 @@
+version: '2.1'
+
+services:
+
+  jboss:
+    build: ./src/test/docker/jboss
+    container_name: pm-stats-processor-enm_jboss
+    environment:
+      JAVA_OPTS: -Xms512m -Xmx2g -XX:PermSize=256m -XX:MaxPermSize=768m
+      # External services
+      ALGORITHM_SERVICE_HOSTNAME: jboss
+      ALGORITHM_SERVICE_PORT: 8080
+      OSS_REPOSITORY_SERVICE_HOSTNAME: jboss
+      OSS_REPOSITORY_SERVICE_PORT: 8080
+      ### Database credentials
+      algorithm-service-db.user: algorithm_service_user
+      algorithm-service-db.password: 1234qwer
+      algorithm-service-db.driver: org.postgresql.Driver
+      algorithm-service-db.jdbcConnection: jdbc:postgresql://postgres:5432/algorithm_service_db
+      oss-repository-service-db.user: oss_repository_service_user
+      oss-repository-service-db.password: 1234qwer
+      oss-repository-service-db.driver: org.postgresql.Driver
+      oss-repository-service-db.jdbcConnection: jdbc:postgresql://eric-oss-repository-data:5432/oss_repository_service_db
+    hostname: jboss
+    links:
+    - stubbed-enm
+    - eric-oss-repository-data
+    - eric-pm-son-stats-data
+    ports:
+    - 8080:8080
+    - 8787:8787
+    - 9990:9990
+    - 9999:9999
+    volumes_from:
+    - stubbed-enm
+
+  eric-oss-repository-data:
+    image: armdocker.rnd.ericsson.se/proj-eson-3pp/postgres
+    container_name: pm-stats-processor-enm_eric-oss-repository-data
+    hostname: eric-oss-repository-data
+    ports:
+    - 5433:5432
+
+  eric-pm-son-stats-data:
+    image: armdocker.rnd.ericsson.se/proj-eson-3pp/postgres
+    container_name: pm-stats-parsing-service_eric-pm-son-stats-data
+    hostname: eric-pm-son-stats-data
+    ports:
+    - 5434:5432
+
+  stubbed-enm:
+    build: ./src/test/docker/stubbed-enm
+    container_name: pm-stats-processor-enm_stubbed-enm
+    hostname: stubbed-enm
+    environment:
+      JAVA_OPTS: -Xms512m -Xmx2g -XX:PermSize=256m -XX:MaxPermSize=768m -Djava.net.preferIPv4Stack=true
+    ports:
+    - 443:443
+    - 8989:8787
+    volumes:
+    - /stubbed-enm/fls/files/

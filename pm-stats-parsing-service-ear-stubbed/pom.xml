@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>pm-stats-processor-enm-testsuite</artifactId>
+        <groupId>com.ericsson.oss.services.sonom</groupId>
+        <version>1.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>pm-stats-parsing-service-ear-stubbed</artifactId>
+    <packaging>ear</packaging>
+    <name>[pm-stats-parsing-service] Stubbed EAR module</name>
+
+    <properties>
+        <version.maven-ear-plugin>2.9</version.maven-ear-plugin>
+    </properties>
+
+    <dependencies>
+        <!-- SON Dependencies -->
+        <dependency>
+            <groupId>com.ericsson.oss.services.sonom</groupId>
+            <artifactId>pm-stats-parsing-service-ejb-stubbed</artifactId>
+            <version>${project.version}</version>
+            <type>ejb</type>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <outputDirectory>${project.parent.artifactId}-${project.version}</outputDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>${version.maven-ear-plugin}</version>
+                <configuration>
+                    <version>${version.jee}</version>
+                    <earSourceDirectory>src/main/application</earSourceDirectory>
+                    <workDirectory>target/${project.parent.artifactId}-${project.version}</workDirectory>
+                    <defaultLibBundleDir>${project.ear.defaultLibBundleDir}</defaultLibBundleDir>
+                    <description>${project.parent.artifactId} JEE6 service</description>
+                    <displayName>${project.parent.artifactId} JEE6 service</displayName>
+                    <archive>
+                        <manifestEntries>
+                            <Dependencies>${project.ear.Dependencies}</Dependencies>
+                        </manifestEntries>
+                    </archive>
+                    <modules>
+                        <ejbModule>
+                            <groupId>com.ericsson.oss.services.sonom</groupId>
+                            <artifactId>pm-stats-parsing-service-ejb-stubbed</artifactId>
+                        </ejbModule>
+                    </modules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
